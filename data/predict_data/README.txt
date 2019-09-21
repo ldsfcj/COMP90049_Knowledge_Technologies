@@ -1,0 +1,8 @@
+1.KT_Assignment1_GED.ipynb
+This is the blend word detecting system using algorithm of GED, by dividing the candidates into two part to calculate the global edit distance with each word in the dictionary, prefix is 2 letters, and suffix is the remaining part of the word. if each part of the candidates meet the distance requirment, the candidate is a predicted blend word.
+
+2.KT_Assignment1_LED.ipyng
+This is the blend word detecting system using algorithm of LED, through calculating the LED between candidates and words in the dictionary. The requirements of the results are the candidates can find at least one best match substring in the beginning and end of the candidates respectively, and existing the beginning substring and the end substring combining can form the candidate. then the candidate will be returned as a blend word.
+
+3.KT_Assignment1_Jaro_Winkler.ipynb
+This is the blend word detecting system using algorithm of Jaro_Winkler Similarity. Use the candidates to calculate the similarity with dic_words. Choosing the first word in the dictionary that the similarity between these two words are more than 0.9. Then remove the similar prefix between the candidate word and the first word in the dictionary. Reverse the remaining part of the candidate word and each words in the dictionary to calculate similarity again. if the dictionary exists the word meet the similarity over 0.9 with the reversed remaining part of the candidate, the candidate will be returned as a blend word.
